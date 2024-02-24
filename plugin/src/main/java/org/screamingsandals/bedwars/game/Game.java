@@ -1813,8 +1813,12 @@ public class Game implements org.screamingsandals.bedwars.api.game.Game {
             updateLobbyScoreboard();
         } else if (status == GameStatus.RUNNING) {
             if (countdown == 0) {
-                nextCountdown = postGameWaiting;
-                nextStatus = GameStatus.GAME_END_CELEBRATING;
+                for (CurrentTeam t : teamsInGame) {
+                    if (t.isTargetBlockExists()) {
+                        targetBlockExplode(t);
+                    }
+                }
+                nextCountdown=0;
             } else {
                 nextCountdown--;
             }

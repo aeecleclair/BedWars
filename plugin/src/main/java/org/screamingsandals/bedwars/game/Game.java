@@ -110,6 +110,7 @@ public class Game implements org.screamingsandals.bedwars.api.game.Game {
     private BarColor gameBossBarColor = null;
     private String gameBossBarColorName = null;
     private String customPrefix = null;
+    private List<CurrentTeam> classement = new ArrayList<CurrentTeam>();
 
     // Boolean settings
     public static final String COMPASS_ENABLED = "compass-enabled";
@@ -637,6 +638,10 @@ public class Game implements org.screamingsandals.bedwars.api.game.Game {
                 if (team.teamInfo.bed.equals(loc)) {
                     team.isBed = false;
                     updateScoreboard();
+                    String texttolog = Game.this.name + " : Team " + team.teamInfo.name +" eliminated";
+                    Main.getInstance().getLogger().info(texttolog);
+                    this.classement.add(team);
+
                     String colored_broker = "explosion";
                     if (broker != null) {
                         colored_broker = getPlayerTeam(Main.getPlayerGameProfile(broker)).teamInfo.color.chatColor + broker.getDisplayName();
@@ -1711,6 +1716,7 @@ public class Game implements org.screamingsandals.bedwars.api.game.Game {
         BedwarsGameChangedStatusEvent statusE = new BedwarsGameChangedStatusEvent(this);
         // Phase 2: If this is first tick, prepare waiting lobby
         if (countdown == -1 && status == GameStatus.WAITING) {
+            classement.clear();
             previousCountdown = countdown = pauseCountdown;
             previousStatus = GameStatus.WAITING;
             String title = i18nonly("bossbar_waiting");
@@ -2143,6 +2149,42 @@ public class Game implements org.screamingsandals.bedwars.api.game.Game {
                             for (CurrentTeam t : teamsInGame) {
                                 if (t.isAlive()) {
                                     winner = t;
+
+                                    String extrememessage = "\u00A72-----------------------------------------------------\u00A7r";
+                                    String newline=System.getProperty("line.separator");
+                                    String teamstring = "[ ";
+                                    for (GamePlayer player : players) {
+                                        if (getPlayerTeam(player)== t){
+                                            teamstring = teamstring + player.player.getName() + ", ";
+                                        } 
+                                    }
+                                    teamstring = teamstring.substring(0,teamstring.length()-2)+ " ]";
+
+                                    String messagef = extrememessage + newline + newline + "                            "+ this.name + " - Teams " + newline + newline + "                          \u00A76\u00A7lGagnant : \u00A7r" + org.screamingsandals.bedwars.game.TeamColor.valueOf(winner.getColor().name()).chatColor
+                                    .toString() + teamstring + newline + newline;
+                                    int nb_team = classement.size();
+                                    int iswinnerbedbroken = 0;
+                                    for (int i=0;i<nb_team-iswinnerbedbroken;i++){
+                                        teamstring = "";
+                                        CurrentTeam teamf = classement.get(nb_team-1-iswinnerbedbroken);
+                                        if (winner.getName()== teamf.getName()){
+                                            iswinnerbedbroken=1;
+                                        } else {
+                                            for (GamePlayer player : players) {
+                                                if (getPlayerTeam(player)== teamf){
+                                                    teamstring = teamstring + player.player.getName() + ", ";
+                                                } 
+                                            }
+                                            if (teamstring != ""){
+                                                teamstring = teamstring.substring(0,teamstring.length()-2)+ " ]";
+                                                messagef = messagef + "                           \u00A7r\u00A7l" + String.valueOf(i+2-iswinnerbedbroken)+"eme : \u00A7r" + org.screamingsandals.bedwars.game.TeamColor.valueOf(teamf.getColor().name()).chatColor.toString() + teamstring + newline;
+                                            }
+                                        }
+                                    }
+                                    messagef = messagef + newline + extrememessage;
+                                    Bukkit.getServer( ).broadcastMessage(messagef);
+                                    classement.clear();
+
                                     String time = getFormattedTimeLeft(gameTime - countdown);
                                     String message = i18nc("team_win", customPrefix)
                                             .replace("%team%", TeamColor.fromApiColor(t.getColor()).chatColor + t.getName())

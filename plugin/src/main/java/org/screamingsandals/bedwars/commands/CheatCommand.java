@@ -83,15 +83,15 @@ public class CheatCommand extends BaseCommand {
 
 
         if (args.size() >= offset + 1) {
-            if (args.get(offset).equalsIgnoreCase("startemptygame") && offset != 1) { // not allowed for console
-                if (game.getStatus() == GameStatus.WAITING) {
-                    game.forceGameToStart = true;
-                    sender.sendMessage(i18n("game_forced"));
-                } else {
-                    sender.sendMessage(i18n("cheat_not_waiting"));
-                }
-                return true;
-            }
+            // if (args.get(offset).equalsIgnoreCase("startemptygame") && offset != 1) { // not allowed for console
+            //     if (game.getStatus() == GameStatus.WAITING) {
+            //         game.forceGameToStart = true;
+            //         sender.sendMessage(i18n("game_forced"));
+            //     } else {
+            //         sender.sendMessage(i18n("cheat_not_waiting"));
+            //     }
+            //     return true;
+            // }
 
             switch (args.get(offset).toLowerCase()) {
                 case "give":
@@ -273,6 +273,14 @@ public class CheatCommand extends BaseCommand {
                         }
                     }
                     break;
+                case "startemptygame":
+                    if (game.getStatus() == GameStatus.WAITING) {
+                        game.forceGameToStart = true;
+                        sender.sendMessage(i18n("game_forced"));
+                    } else {
+                        sender.sendMessage(i18n("cheat_not_waiting"));
+                    }
+                    break;
                 default:
                     sender.sendMessage(i18n("cheat_please_provide_valid_cheat_type"));
             }
@@ -297,7 +305,7 @@ public class CheatCommand extends BaseCommand {
 
         if (args.size() == offset + 1) {
             if (offset == 1) {
-                completion.addAll(Arrays.asList("give", "kill", "destroybed", "destroyallbeds"));
+                completion.addAll(Arrays.asList("give", "kill", "startemptygame", "destroybed", "destroyallbeds"));
             } else {
                 completion.addAll(Arrays.asList("give", "kill", "startemptygame", "destroybed", "destroyallbeds", "jointeam"));
             }

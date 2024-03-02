@@ -1,0 +1,36 @@
+record:
+  Arene1:
+    time: 2
+    team: §9Bleu
+    winners:
+    - Stellion41
+  Arene2:
+    time: 6
+    team: §aVert
+    winners:
+    - MineArt
+  Arene3:
+    time: 227
+    team: §1Bleu
+    winners:
+    - SoDraX
+  Arene4:
+    time: 12
+    team: §dRose
+    winners:
+    - Harmys
+  Arene0:
+    time: 24
+    team: §9Bleu
+    winners:
+    - wowkin
+  Arene5:
+    time: 1
+    team: §cRouge
+    winners:
+    - MineArt
+  Arene6:
+    time: 71
+    team: §4BROWN
+    winners:
+    - narkego

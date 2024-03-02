@@ -1,0 +1,64 @@
+sign:
+- name: Arene1
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: 1.0
+    y: 3.0
+    z: 4.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Arene3
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: -2.0
+    y: 3.0
+    z: 4.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Arene0
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: 1.0
+    y: 3.0
+    z: -4.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Arene6
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: -2.0
+    y: 3.0
+    z: -4.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Arene2
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: 1.0
+    y: 2.0
+    z: 4.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Arene4
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: -2.0
+    y: 2.0
+    z: 4.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Arene5
+  location:
+    ==: org.bukkit.Location
+    world: World
+    x: 1.0
+    y: 2.0
+    z: -4.0
+    pitch: 0.0
+    yaw: 0.0

@@ -1,0 +1,91 @@
+[21:58:29] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:58:33] [ServerMain/INFO]: Loaded 1174 recipes
+[21:58:33] [ServerMain/INFO]: Loaded 1271 advancements
+[21:58:34] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[21:58:34] [Server thread/INFO]: Loading properties
+[21:58:34] [Server thread/INFO]: This server is running Purpur version git-Purpur-2151 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1083e45 on HEAD)
+[21:58:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:58:35] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:58:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[21:58:36] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[21:58:36] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[21:58:36] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
+[21:58:36] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.10, test run: true
+[21:58:36] [Server thread/INFO]: Default game type: ADVENTURE
+[21:58:36] [Server thread/INFO]: Generating keypair
+[21:58:36] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:58:37] [Server thread/INFO]: Using epoll channel type
+[21:58:37] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:58:37] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[21:58:37] [Server thread/INFO]: [BedWars] Loading server plugin BedWars v0.2.32-SNAPSHOT
+[21:58:37] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.59
+[21:58:37] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.9.1-SNAPSHOT-660;f94b96d
+[21:58:38] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@1bf72520]
+[21:58:38] [Server thread/INFO]: [SBA] Loading server plugin SBA v1.5.12.4
+[21:58:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:58:40] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.9.1-SNAPSHOT-660;f94b96d
+[21:58:40] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[21:58:40] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[21:58:40] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[21:58:40] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[21:58:40] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_20_R3.PaperweightFaweAdapter as the Bukkit adapter
+[21:58:41] [Server thread/INFO]: Preparing level "World"
+[21:58:43] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:58:43] [Server thread/INFO]: Time elapsed: 551 ms
+[21:58:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:58:43] [Server thread/INFO]: Time elapsed: 135 ms
+[21:58:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:58:43] [Server thread/INFO]: Time elapsed: 50 ms
+[21:58:43] [Server thread/INFO]: [BedWars] Enabling BedWars v0.2.32-SNAPSHOT
+[21:58:43] [Server thread/INFO]: [BedWars] Successfully loaded messages for BedWars! Language: English
+[21:58:43] [Server thread/INFO]: [BedWars] Loading statistics from YAML-File ...
+[21:58:44] [Server thread/INFO]: =====================  by ScreamingSandals <Misat11, Iamceph, Pronze>
+[21:58:44] [Server thread/INFO]: + Screaming BedWars +  Version: 0.2.32-SNAPSHOT FREE
+[21:58:44] [Server thread/INFO]: =====================  SNAPSHOT VERSION (branch-0.2.x/custom) - Use at your own risk
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene2Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene1Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene6Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene5Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene4Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene3Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene2Â loaded!
+[21:58:44] [Server thread/INFO]: Â[BÂW] ÂArena ÂArene0Â loaded!
+[21:58:44] [Server thread/INFO]: ÂEverything is loaded! If you like our work, consider visiting our Patreon! <3
+[21:58:44] [Server thread/INFO]: Âhttps://www.patreon.com/screamingsandals
+[21:58:44] [Server thread/INFO]: [spark] Enabling spark v1.10.59
+[21:58:45] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[21:58:45] [Server thread/INFO]: [spark] Starting background profiler...
+[21:58:46] [Server thread/INFO]: [SBA] Enabling SBA v1.5.12.4
+[21:58:47] [Thread-8/INFO]: No updates found
+[21:58:48] [Server thread/INFO]: [SBA] SBA initialized using Bedwars 0.2.32-SNAPSHOT
+[21:58:48] [Server thread/WARN]: [SBA] SBA hasn't been tested on this version of Bedwars. If you encounter bugs, use version 0.2.20 to 0.2.30. 
+[21:58:49] [Server thread/INFO]: [SBA] Plugin has finished loading!
+[21:58:49] [Server thread/INFO]: [SBA] SBA Initialized on JAVA 17.0.10
+[21:58:49] [Server thread/INFO]: [SBA] SBA Commit is on par with 28351be
+[21:58:49] [Server thread/INFO]: Starting remote control listener
+[21:58:49] [Server thread/INFO]: Thread RCON Listener started
+[21:58:49] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[21:58:49] [Server thread/INFO]: Running delayed init tasks
+[21:58:50] [Server thread/INFO]: Done (16.161s)! For help, type "help"
+[21:59:09] [User Authenticator #0/INFO]: UUID of player MineArt is 2ca21692-a8bc-47fb-abb9-3384ba63b216
+[21:59:10] [Server thread/INFO]: MineArt joined the game
+[21:59:10] [Server thread/INFO]: MineArt[/78.199.154.185:52418] logged in with entity id 65 at ([World]-158.97367301475393, 6.2148380133356085, 110.3385693290075)
+[21:59:14] [Server thread/INFO]: MineArt issued server command: /bw join Arene1
+[21:59:18] [Server thread/INFO]: MineArt issued server command: /bw cheat startemptygame
+[21:59:20] [Server thread/WARN]: MineArt moved too quickly! 68.53190315133759,-62.0,-0.018903885315864954
+[21:59:32] [Server thread/INFO]: MineArt issued server command: /bw cheat destroybed Vert
+[21:59:32] [Server thread/INFO]: [BedWars] Arene1 : Team Vert eliminated
+[21:59:35] [Server thread/INFO]: MineArt issued server command: /bw cheat destroybed Orange
+[21:59:35] [Server thread/INFO]: [BedWars] Arene1 : Team Orange eliminated
+[21:59:36] [Server thread/INFO]: [BedWars] 2
+[21:59:36] [Server thread/INFO]: -----------------------------------------------------
+
+                            Arene1
+                         Gagnant : Vert
+
+                        2eme : Orange
+                        3eme : Orange
+
+-----------------------------------------------------
+[21:59:36] [Server thread/INFO]: [SBA] Arene1
+[21:59:36] [Server thread/INFO]: [SBA] MineArt : 0 kills | 0 bed destroyed
